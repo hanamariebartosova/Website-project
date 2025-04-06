@@ -1,0 +1,236 @@
+/* RESET DEFAULT STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT >> DEFINING GLOBAL CSS VARIABLES */
+:root {
+  --font-family: "Roboto", sans-serif;
+  --1background-color-navigation: #33292a;
+  --2background-color-about: #f2f2f2;
+  --3background-color-services: #33292a;
+  --4background-color-trips: #f2f2f2;
+  --5background-color-destinations: #644b4f;
+  --6background-color-reviews: #f2f2f2;
+  --7background-color-footer: #333333;
+  --font-color-black: #000;
+  --font-color-white: #fff;
+  --font-color-peach: #efa69d;
+  --color-lightbeige: #f2f2f2;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* CENTER-BLOCK >> Applies auto left and right margins and limits the width to 70% */
+.center-block {
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* NAVIGATION */
+.navigation {
+  background-color: var(--1background-color-navigation);
+  color: var(--font-color-white);
+  padding: 1rem 0;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  /*margin: 0 auto;*/
+  justify-content: space-around;
+  /*width: 70%;*/
+}
+
+.navigation-item {
+  /*padding: 15px;*/
+  font-weight: bold;
+}
+
+/*HERO*/
+.hero {
+  background-image: url("images/scott-tent.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-wrapper {
+  height: 700px;
+  position: relative;
+}
+
+.hero-text {
+  color: var(--font-color-white);
+  font-size: 40px;
+  text-align: right;
+  position: absolute;
+  line-height: 1.4;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 5rem;
+}
+
+/* ABOUT - ABOUT US */
+.about {
+  background-color: var(--2background-color-about);
+  padding: 6rem 0;
+}
+
+.about-wrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+}
+
+/* SERVICES - WHAT WE DO*/
+.services {
+  background-color: var(--3background-color-services);
+}
+
+.services-wrapper {
+}
+
+.services-container-text {
+  color: var(--font-color-white);
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.services-container-icons {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+
+.services-container-icons img {
+  object-fit: contain;
+  height: auto;
+  width: calc(25% - 6rem);
+}
+
+/* TRIPS - OUR TRIPS */
+.trips {
+  background-color: var(--4background-color-trips);
+}
+
+.trips-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 6rem 0;
+}
+
+.trips-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.trips-item.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
+
+/* DESTINATIONS - WHERE DO YOU WANT TO GO? */
+.destinations {
+  background-color: var(--5background-color-destinations);
+}
+
+.destinations-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 6rem 0;
+}
+
+.destinations-container-title {
+  flex: 1;
+  font-size: 20px;
+  color: var(--font-color-white);
+}
+
+.destinations-container-info {
+  flex: 3;
+}
+
+.destinations-item-1 {
+  color: var(--font-color-white);
+}
+
+.destinations-item-2 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  color: var(--font-color-black);
+  font-weight: bold;
+  background-color: var(--color-lightbeige);
+  border-radius: 5px;
+  width: max-content;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-item {
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER - CONTACT INFORMATION */
+.footer {
+  background-color: var(--7background-color-footer);
+}
+
+.footer-wrapper {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-item-1 {
+  color: var(--font-color-peach);
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.footer-item-2 {
+  color: var(--color-lightbeige);
+  font-size: 9px;
+  padding-top: 10px;
+}
